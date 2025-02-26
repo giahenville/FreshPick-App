@@ -52,7 +52,82 @@ nav ul li a:hover {
 }
 
 /* Hero Section */
+/* Hero Section */
 .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(145deg, #003366, #004b87); /* Deep luxury blue gradient */
+    padding: 100px 20px;
+    color: #fff;
+    flex-direction: row;
+    text-align: center; /* Ensures text aligns centrally */
+}
+
+.hero-content {
+    max-width: 600px;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-family: 'Playfair Display', serif;
+}
+
+.hero button {
+    padding: 10px 20px;
+    background-color: #005b96; /* Slightly lighter blue */
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.hero button:hover {
+    background-color: #0067b3;
+}
+
+.hero-image img {
+    max-width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Styles for Small Devices (Mobile Phones) */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        padding: 50px 20px;
+        justify-content: center; /* Centering content */
+        align-items: center; /* Aligning image and text centrally */
+        text-align: center; /* Ensuring all text is centered */
+    }
+
+    .hero-content {
+        max-width: 90%;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .hero button {
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+
+    .hero-image img {
+        width: 80%;
+        max-width: 400px;
+        margin-top: 20px;
+        border-radius: 10px;
+    }
+}
+
+/* .hero {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -91,7 +166,7 @@ nav ul li a:hover {
     max-width: 100%;
     border-radius: 15px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
+} */
 
 /* Feature Sections */
 .feature {
